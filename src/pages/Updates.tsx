@@ -64,6 +64,35 @@ const languageData = [
 // Define the version history data
 const versionHistory = [
   {
+    version: "v1.0",
+    releaseDate: new Date().toLocaleDateString(),
+    title: "Initial GitHub Release",
+    description: "First official release to our new GitHub repository with complete codebase migration and version updates.",
+    changes: [
+      {
+        type: "feature",
+        icon: <Sparkles className="h-4 w-4" />,
+        items: [
+          "Completed full migration to new GitHub repository",
+          "Set up new version tracking system starting at v1.0",
+          "Established clean main branch as foundation for future development",
+          "Updated package metadata with new versioning scheme"
+        ]
+      },
+      {
+        type: "code",
+        icon: <Github className="h-4 w-4" />,
+        items: [
+          "Created new GitHub repository at github.com/Xenonesis/new-typing",
+          "Migrated all existing code with version history preserved",
+          "Updated package.json and package-lock.json with v1.0 version",
+          "Set up proper tagging system for releases",
+          "Established main branch as primary development line"
+        ]
+      }
+    ]
+  },
+  {
     version: "7.5",
     releaseDate: new Date().toLocaleDateString(),
     title: "Word Practice & Accessibility Improvements",
@@ -764,24 +793,6 @@ const versionHistory = [
           "Implemented user profiles with statistics",
           "Added practice modes for different skill levels",
           "New typing test categories: code, quotes, articles"
-        ]
-      }
-    ]
-  },
-  {
-    version: "1.0",
-    releaseDate: "22 March 2025",
-    title: "Initial Release",
-    description: "First public release of TypeSpeed Master with core typing test functionality.",
-    changes: [
-      {
-        type: "feature",
-        icon: <LayoutGrid className="h-4 w-4" />,
-        items: [
-          "Basic typing test with WPM calculation",
-          "Accuracy measurement and error tracking",
-          "Simple statistics page",
-          "Responsive design for mobile and desktop"
         ]
       }
     ]
